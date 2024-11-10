@@ -4,9 +4,8 @@ Created a Hangman game as part of Python Programming Internship with Code Alpha
 This program is a text-based Hangman game where players guess the name of an animal letter by letter. The game loads a random animal name from a provided file and gives the player up to six mistakes before ending. If the player correctly guesses the animal, they win; otherwise, the game displays a "Game Over" message after seven incorrect attempts.
 
 ### Requirements
-Python 3.x
 
-A text file containing animal names (one per line), which should be located at C:\Users\ji160\OneDrive\Desktop\CodeAlpha\animals.txt.
+A text file containing animal names (one per line), which can be found on: `https://github.com/skjorrface/animals.txt`
 
 ### Instructions
 The program opens and reads an animal name from the animals.txt file, storing it in a list.
@@ -26,21 +25,21 @@ The game ends either when:
 ### Code Explanation
 #### Main Variables:
 
-data_into_list: Holds all animal names from the file.
+`data_into_list`: Holds all animal names from the file.
 
-animal: Randomly chosen animal name converted to lowercase.
+`animal`: Randomly chosen animal name converted to lowercase.
 
-blist: Boolean list where each element corresponds to a letter in the animal name, indicating if it has been guessed.
+`blist`: Boolean list where each element corresponds to a letter in the animal name, indicating if it has been guessed.
 
-used_letters: List of letters the player has already guessed.
+`used_letters`: List of letters the player has already guessed.
 
-mistakes: Tracks the number of incorrect guesses.
+`mistakes`: Tracks the number of incorrect guesses.
 
 #### Functions:
-display(mistakes): Outputs the hangman graphic depending on the number of mistakes.
+`display(mistakes)`: Outputs the hangman graphic depending on the number of mistakes.
 
-GameEndWinner(animal): Displays a winning message when the player successfully guesses the animal.
+`GameEndWinner(animal)`: Displays a winning message when the player successfully guesses the animal.
 
-GameEndLoser(animal): Displays a "Game Over" message with the correct animal name.
+`GameEndLoser(animal)`: Displays a "Game Over" message with the correct animal name.
 
-show_current_status(blist, length, wlist): Shows the current state of the guessed animal name, with correctly guessed letters displayed.
+`show_current_status(blist, length, wlist)`: Shows the current state of the guessed animal name, with correctly guessed letters displayed.
