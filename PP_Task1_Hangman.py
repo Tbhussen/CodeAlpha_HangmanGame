@@ -100,7 +100,8 @@ def show_current_status(blist, length, wlist):
     print()
 
 # opening the file in read mode 
-my_file = open("C:\\Users\\ji160\\OneDrive\\Desktop\\CodeAlpha\\animals.txt", "r") 
+# change to correct path for use
+my_file = open("animals.txt", "r") 
   
 # reading the file 
 data = my_file.read() 
