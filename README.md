@@ -10,22 +10,37 @@ A text file containing animal names (one per line), which should be located at C
 
 ### Instructions
 The program opens and reads an animal name from the animals.txt file, storing it in a list.
+
 It selects a random animal from this list and asks the player to guess the animal's name one letter at a time.
+
 The player has up to six incorrect guesses. With each mistake, the program visually displays a part of a "hangman" figure.
+
 Correct guesses reveal the corresponding letters in the animal name.
+
 The game ends either when:
-The player correctly guesses all letters in the animal name, or
-The player makes seven incorrect guesses, resulting in a "Game Over."
-Code Explanation
-Main Variables:
+
+1. The player correctly guesses all letters in the animal name, or
+
+2. The player makes seven incorrect guesses, resulting in a "Game Over."
+
+### Code Explanation
+#### Main Variables:
 
 data_into_list: Holds all animal names from the file.
+
 animal: Randomly chosen animal name converted to lowercase.
+
 blist: Boolean list where each element corresponds to a letter in the animal name, indicating if it has been guessed.
+
 used_letters: List of letters the player has already guessed.
+
 mistakes: Tracks the number of incorrect guesses.
-### Functions:
+
+#### Functions:
 display(mistakes): Outputs the hangman graphic depending on the number of mistakes.
+
 GameEndWinner(animal): Displays a winning message when the player successfully guesses the animal.
+
 GameEndLoser(animal): Displays a "Game Over" message with the correct animal name.
+
 show_current_status(blist, length, wlist): Shows the current state of the guessed animal name, with correctly guessed letters displayed.
